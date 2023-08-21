@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Accordion from './tasks/Accordion';
+import ApiExample from './tasks/ApiExample';
+import ContextTask from './tasks/ContextTask';
+import Increment from './tasks/Increment';
+import PassingProps1 from './tasks/PassingProps1';
+import TodoList from './tasks/TodoList';
+import UseEffectTask from './tasks/UseEffectTask';
+import Wordle from './tasks/Wordle';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Increment />
+      <hr />
+
+      <Accordion />
+      <hr />
+
+      <PassingProps1 />
+      <hr />
+
+      <ContextTask />
+      <hr />
+      <TodoList />
+      <UseEffectTask />
+      <Wordle />
+      <ApiExample />
     </div>
   );
 }

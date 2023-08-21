@@ -1,0 +1,144 @@
+.wordle {
+    margin: 0 auto;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+
+        div {
+            border: 1px solid black;
+            background-color: #e8e8e8;
+            height: 48px;
+            margin: 2px;
+            width: 48px;
+            font-size: 30px;
+            font-weight: bold;
+            font-variant: small-caps;
+
+            &.match {
+                background-color: #ffc354;
+            }
+
+            &.exact {
+                background-color: #5fd53f;
+            }
+
+            // &.wrong {
+            //     background-color: #ff7979;
+            // }
+        }
+
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        border: 1px solid black;
+        height: 48px;
+        margin: 24px 0 0;
+        width: 256px;
+        outline: none;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        display: block;
+        
+
+        &:focus {
+            outline: none;
+        }
+
+        &.error {
+            animation: Error 0.5s;
+        }
+    }
+
+    .clues {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            place-content: center;
+
+            .clue {
+                border: 1px solid black;
+                background-color: #e2e2e2;
+                height: 24px;
+                margin: 2px;
+                width: 24px;
+                font-size: 16px;
+                font-weight: bold;
+                font-variant: small-caps;
+
+                &.match {
+                    background-color: #ffc354;
+                }
+
+                &.exact {
+                    background-color: #5fd53f;
+                }
+
+                &.wrong {
+                    background-color: #e68989;
+                }
+            }
+        }
+    }
+}
+
+@keyframes Error {
+    0% {
+        margin-left: 0;
+        box-shadow: 0 0 20px #ff7979;
+    }
+
+    10% {
+        margin-left: 10px;
+    }
+
+    20% {
+        margin-left: -10px;
+    }
+
+    30% {
+        margin-left: 10px;
+    }
+
+    40% {
+        margin-left: -10px;
+    }
+
+    50% {
+        margin-left: 10px;
+    }
+
+    60% {
+        margin-left: -10px;
+    }
+
+    70% {
+        margin-left: 10px;
+    }
+
+    80% {
+        margin-left: -10px;
+    }
+
+    90% {
+        margin-left: 10px;
+    }
+
+    100% {
+        margin-left: 0;
+        box-shadow: none;
+    }
+
+}

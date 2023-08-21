@@ -1,0 +1,9 @@
+.accordion {
+    max-width: 600px;
+    margin: 48px auto;
+    .content {
+        border: 1px solid black;
+        overflow: hidden;
+        transition: height 0.2s ease-out;
+    }
+}
