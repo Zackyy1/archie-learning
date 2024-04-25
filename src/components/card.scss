@@ -1,0 +1,31 @@
+body {
+    background-color: #2a1f19;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.card__content-wrapper {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    pointer-events: none;
+}
+
+.card__image {
+
+    max-height: 800px;
+    border-radius: 16px;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.25);
+
+
+
+}

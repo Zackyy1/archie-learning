@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: white;
 }
 
 button {
@@ -18,4 +19,8 @@ button {
 
 p {
   padding: 12px;
+}
+
+.letter:not(.exact):not(.match) {
+  color: black;
 }
